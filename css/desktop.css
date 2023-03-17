@@ -15,38 +15,33 @@ header .header__city input {
 
 main {
     width: 100%;
-    margin-left: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
     column-gap: 10px;
     height: 100%;
 }
+.principalParams{
+   margin-top: 80px;
+   grid-template-rows: 1fr;
+   grid-template-columns: repeat(3, 1fr);
+}
 
-.principalParams {
-    margin-top: 40px ;
-    margin-left: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: right;
+.principalParams p:nth-child(1){
+    align-self: center;
+    justify-self: center;
+}
+.principalParams p:nth-child(3){
+    grid-column: 2;
+    margin-top: 30px;
+}
+
+.principalParams p:nth-child(4){
+    grid-row: 1;
+    grid-column: 3;
 }
 .secondaryParams {
-    grid-template-rows: repeat(3, 1fr);
     margin: 40px 0px 0px 0px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
-.card__visibility{
-    grid-column: 2;
-}
-.card__wind{
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.card__humidity{
-    grid-column: 2;
-    grid-row: 3;
-}
