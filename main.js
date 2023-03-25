@@ -16,7 +16,7 @@ const openWeatherCall = async (URL_API) => {
 //tomo el input de la ciudad
 const getCity = () => {
   const city = document.querySelector("#city").value;
-  const URL_API = `http://api.openweathermap.org/data/2.5/weather?q=${city}&limit=5&appid=${API_KEY}&units=metric`;
+  const URL_API = `https://api.openweathermap.org/data/2.5/weather?q=${city}&limit=5&appid=${API_KEY}&units=metric`;
   document.querySelector("#city").value = "";
   openWeatherCall(URL_API).then((data) => {
     /* debugger; */
